@@ -23,7 +23,7 @@ mongoose.connect(process.env.MONGO_URI)
   .catch((error) => console.error('MongoDB connection error:', error));
 
 // Start server on localhost
-const PORT = process.env.PORT || 2000; // Default to 5000 if no port is specified in environment variables
+const PORT = process.env.PORT || 80; // Default to 5000 if no port is specified in environment variables
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
